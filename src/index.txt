@@ -1,4 +1,1 @@
 react 项目 demo
-回到过去：git log （获取commit值）
-		  git reset --hard commit值
-		  git reflog

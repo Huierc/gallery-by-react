@@ -1,3 +1,17 @@
 react 项目 demo
 回到过去：git log (commit)
-			git reset
+			git reset     git reflog
+	git add * 添加到暂存区
+	git commit -m “xxx”  提交到本地仓库
+
+ 
+react插件：
+①：react-router-dom               开发单页应用
+②：axios                          与后端进行数据交互
+③：redux+react-redux+redux-thunk  管理应用组件状态
+④：antd-mobile                    构建页面UI
+⑤：mongoose                       操作MongoDB数据库
+⑥：express                        搭建后台路由
+
+
+打包发布: npm run build   npm install -g serve  servr build

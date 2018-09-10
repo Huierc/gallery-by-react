@@ -15,3 +15,14 @@ react插件：
 
 
 打包发布: npm run build   npm install -g serve  servr build
+
+路由的理解：
+1.什么是路由？
+	一个路由就是一个映射关系（key:value）
+	key为路由路径，value可能是function/component
+2.路由分类
+	后台路由：node服务器端路由，value是function，用来处理客户端提交的请求并返回一个响应数据。
+	前台路由：浏览器端路由，value是component，当请求的是路由path时，浏览器端没有发送http请求，但界面会更新显示对应的组件
+3.如何编写路由
+	编写路由组件
+	route，navlink

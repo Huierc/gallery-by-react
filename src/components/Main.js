@@ -2,21 +2,40 @@ require('normalize.css/normalize.css');
 require('styles/App.css');
 
 import React from 'react';
+import Search from './search';
+import App from './app'
 
-let yeomanImage = require('../images/yeoman.png');
 
-class AppComponent extends React.Component {
+
+export default class AppComponent extends React.Component {
+	constructor(props){
+		super(props);
+		this.state={
+			searchName:''
+		}
+	}
+
+	componentDidMount(){
+
+	}
+
+	searchNameFuc(searchName){
+		this.setState({
+			searchName:searchName
+		})
+	}
+
   render() {
     return (
-      <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <div className="notice">Please edit孙晖 <code>src/components/Main.js</code> to get started!</div>
-      </div>
+      <div>
+		<Search searchNameFuc={this.searchNameFuc.bind(this)}/>
+		<App searchName = {this.state.searchName}/>
+	  </div>
     );
   }
+
 }
 
 AppComponent.defaultProps = {
 };
 
-export default AppComponent;
